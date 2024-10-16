@@ -168,3 +168,9 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .column.six{
+    width:66%
+    }
+   .column.thrid{
+    width:33%
+    }
