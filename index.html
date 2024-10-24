@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MBD DEV | The Development Website Made By Danny For Devlopers </title>
+<script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="https://redjacket-web.cdn.madebydanny.uk/MBDTeamLogobyDesigner.png">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 1300px;
+  display: block;
+  transition: top 0.3s;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 66%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 33%;
+}
+/* Middle column */
+.column.half {
+  width: 50%;
+}
+/* Middle column */
+.column.side1 {
+  width: 25%;
+}
+.top{
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+}
+.floater{
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+}
+  .main {
+    max-width: 1300px;
+    margin: auto;
+  }
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div id="navbar"> 
+    <div class="topnav-centered">
+      <a href="index.html" class="active">MBD DEV</a>
+    </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="#">|</a>
+  <a href="https://redjacket-web.madebydanny.uk"><i class="fa-brands fa-html5"></i>HTML</a>
+  <a href="java.html"><i class="fa-brands fa-js"></i>Javscript Tools</a>
+  <a href="code.html"><i class="fa-solid fa-code"></i>Code Snippets</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="#about"><i class="fa-solid fa-circle-half-stroke"></i></a>
+    <a href="#about"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="#about"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="#">|</a>
+    <a href="https://github.com/therealfuntimeswithdanny/MBD-DEV">   <div id="repoInfo">Connecting to api.github.com</div>
+
+    <script>
+        fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD-DEV')
+            .then(response => response.json())
+            .then(data => {
+                const lastUpdated = new Date(data.updated_at).toLocaleString();
+                document.getElementById('repoInfo').innerText = `Last Updated at: ${lastUpdated}`;
+            });
+    </script></a>
+  </div>
+</div>
+<div class="top">
+  <p> Hidden text </p>
+</div>
+<div class="row">
+    <div  style="background-color:#f1f1f1;color:black;" class="column side1">
+      <h2>What is MBD DEV?</h2>
+    MBD DEV has code snippets, Javascript tools.
+    And we have pre-built website layouts, all of this can be downloaded for free. Our HTML Templates are made by RedJacket Web for MBD DEV. I hope you find this site uesfull.<b><br>MBD DEV is in Development our website is unstable. This site is updated 2-5 times a week.</b><br>
+  </div>
+  <div style="background-color:#ff6666;color:black;" class="column half">
+      youtube video
+    </div>
+  <div style="background-color:#f1f1f1;color: black;" class="column side1">
+    <h2>Free for life</h2>
+    <p>Here at MBD Team we think that basic web devloping education should be free.
+Thats why MBD DEV has been and will be free</p>
+    <p> MBD DEV will never as for your card information and the following:<br>
+- Loaction/Address<br>
+- SSN/Social Security Number<br> 
+- Passwords
+  </div>
+  
+</div>
+<hr>
+<div class="row">
+    <div style="background-color:#ff6666;color:black;" class="column side1">
+      <h2> Code Snippets </h2>
+    </div>
+    <div  style="background-color:#ff66cc;color:black;" class="column half">
+      ggg
+    </div>
+  
+  <div style="background-color:#66ffc2;color:black;" class="column side1">
+    gggg
+  </div>
+  
+</div>
+<div class="floater">
+  <p> text</p>
+</div>
+</div>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>
