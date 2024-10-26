@@ -14,9 +14,28 @@ body {
   margin: 0;
   background-color: white;
 }
+.dark-mode {
+  margin: 0;
+  background-color: black;
+  color: aliceblue;
+}
+.dark-mode .floater{
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+  padding: 7px;
+}
+.floater{
+  width: 100%;
+  background-color: #ff9933;
+  text-align: center;
+  padding: 7px;
+}
 .topnav {
   overflow: hidden;
   background-color: #4d79ff;
+  position: sticky;
+  top: 0;
 }
 
 .topnav a {
@@ -120,12 +139,7 @@ body {
   background-color: black;
   padding: 5px;
 }
-.floater{
-  width: 100%;
-  background-color: #ff9933;
-  text-align: center;
-  padding: 7px;
-}
+
   .main {
     max-width: 1300px;
     margin: auto;
@@ -151,23 +165,25 @@ body {
 <body>
 <div class="main">
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="index.html" class="active"><i class="fa-solid fa-house"></i>Home</a>
+    <a>|</a>
+    <a href="https://redjacket-web.madebydanny.uk">Templates</a>
+    <a href="code-snippets.html">Code Snippets</a>
+    <a href="css.html">CSS</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-
-  <!-- Left-aligned links (default) -->
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-
-  <!-- Right-aligned links -->
   <div class="topnav-right">
-    <a href="#search">Search</a>
+    <a href="map.html">Site Map</a>
+    <a>|</a>
+    <a href="https://github.com/therealfuntimeswithdanny"><i class="fa-brands fa-github"></i></a>
+    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>    
+    <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+    <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
+    <a>|</a>
+
     <a href="#">|</a>
-   <a> <div id="repoInfo">Connecting to api.github.com</div>
+   <a href="https://github.com/therealfuntimeswithdanny/MBD-DEV"> <div id="repoInfo">Connecting to api.github.com</div>
 
     <script>
         fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD-DEV')
@@ -192,7 +208,7 @@ body {
     <h2>Free for life</h2>
     <p>Here at MBD Team we think that basic web devloping education should be free.
 Thats why MBD DEV has been and will be free</p>
-    <p> MBD DEV will never as for your card information and the following:<br>
+    <p> MBD DEV will never ask for your card information and the following:<br>
 - Loaction/Address<br>
 - SSN/Social Security Number<br> 
 - Passwords
@@ -204,9 +220,14 @@ Thats why MBD DEV has been and will be free</p>
     <div style="background-color:#ff6666;color:black;" class="column side1">
       <h2> Code Snippets</h2>
       <p><a href="code-snippets.html">Explore More</a> | <a href="https://www.w3schools.com/howto/default.asp">Open W3Schools How To</a></p>
+      <p>Just like W3Schools How to MBD DEV also has code snippets for <b>HTML, CSS and Javascript</b>. We have <b>step-by-step</b> gudies on the basics of web devloping.
+      All of this for free, All Made By Danny.</p>
     </div>
     <div  style="background-color:#ff66cc;color:black;" class="column half">
-      ggg
+      <h2>Website Templates</h2>
+      <p><a href="https://redjacket-web.madebydanny.uk/templates.html">Explore More</a> | <a href="https://redjacket-web.madebydanny.uk">Open RedJacket Web</a></p>
+      <p>RedJacket Web has made awsmome HTML 5 Website Templates for MBD DEV you can evan uplaod your own template (your template must meet GitHub and MBD DEV Gudielines). Our Templates are free, you can download the code on github for free. To customize the template to how ever you want. 
+      But make sure to keep "view on RedJakcet Web in Floater".</p>
     </div>
   
   <div style="background-color:#66ffc2;color:black;" class="column side1">
@@ -240,6 +261,20 @@ var currentScrollPos = window.pageYOffset;
       x.className = "topnav";
     }
   }
-  </script>
+  // Get the button
+let mybutton = document.getElementById("myBtn");
+
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function myFunction1() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>
