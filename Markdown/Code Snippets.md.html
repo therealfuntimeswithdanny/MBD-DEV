@@ -15,14 +15,18 @@
 <hr>
 <h1 class="code-line" data-line-start=12 data-line-end=13 ><a id="Dark_Mode_Toggle_12"></a>Dark Mode Toggle</h1>
 <p class="has-line-data" data-line-start="13" data-line-end="14">Adding a dark mode toggle to your webiste is basically a standard by now, one of the things every website needs to have.</p>
-<h2 class="code-line" data-line-start=15 data-line-end=16 ><a id="HTML_15"></a>HTML</h2>
-<pre><code class="has-line-data" data-line-start="18" data-line-end="22" class="language-sh">&lt;div class=<span class="hljs-string">"topnav"</span>&gt;
+<h3 class="code-line" data-line-start=14 data-line-end=15 ><a id="Light_Mode_14"></a>Light Mode</h3>
+<p class="has-line-data" data-line-start="15" data-line-end="16"><img src="https://pub-1abe46ba5f3a4b299a9aa3d2afb97808.r2.dev/Screenshot%202024-10-27%20110922.png" alt="MBD CDN Error"></p>
+<h3 class="code-line" data-line-start=16 data-line-end=17 ><a id="Dark_Mode_16"></a>Dark Mode</h3>
+<p class="has-line-data" data-line-start="17" data-line-end="18"><img src="https://pub-1abe46ba5f3a4b299a9aa3d2afb97808.r2.dev/Screenshot%202024-10-27%20111559.png" alt="MBD CDN Error"></p>
+<h2 class="code-line" data-line-start=18 data-line-end=19 ><a id="HTML_18"></a>HTML</h2>
+<pre><code class="has-line-data" data-line-start="21" data-line-end="25" class="language-sh">&lt;div class=<span class="hljs-string">"topnav"</span>&gt;
   &lt;a onclick=<span class="hljs-string">"myFunction1()"</span> id=<span class="hljs-string">"myBtn"</span> title=<span class="hljs-string">"Dark Mode"</span>&gt;&lt;i class=<span class="hljs-string">"fa-solid fa-circle-half-stroke"</span>&gt;&lt;/i&gt;Dark Mode Toggle&lt;/a&gt;
 &lt;/div&gt;
 </code></pre>
-<h2 class="code-line" data-line-start=23 data-line-end=24 ><a id="CSS_23"></a>CSS</h2>
-<p class="has-line-data" data-line-start="24" data-line-end="25">The code for the Navbar where the button is placed.</p>
-<pre><code class="has-line-data" data-line-start="26" data-line-end="43" class="language-sh">.topnav {
+<h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="CSS_26"></a>CSS</h2>
+<p class="has-line-data" data-line-start="27" data-line-end="28">The code for the Navbar where the button is placed.</p>
+<pre><code class="has-line-data" data-line-start="29" data-line-end="46" class="language-sh">.topnav {
   overflow: hidden;
   background-color: <span class="hljs-comment">#4d79ff;</span>
   position: sticky;
@@ -39,9 +43,9 @@
   font-size: <span class="hljs-number">17</span>px;
 }
 </code></pre>
-<h2 class="code-line" data-line-start=43 data-line-end=44 ><a id="Javascript_43"></a>Javascript</h2>
-<p class="has-line-data" data-line-start="44" data-line-end="45">The code for the Navbar where the button is placed.</p>
-<pre><code class="has-line-data" data-line-start="46" data-line-end="51" class="language-sh"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">myFunction</span></span>() {
+<h2 class="code-line" data-line-start=46 data-line-end=47 ><a id="Javascript_46"></a>Javascript</h2>
+<p class="has-line-data" data-line-start="47" data-line-end="48">The code for the Navbar where the button is placed.</p>
+<pre><code class="has-line-data" data-line-start="49" data-line-end="54" class="language-sh"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">myFunction</span></span>() {
    var element = document.body;
    element.classList.toggle(<span class="hljs-string">"dark-mode"</span>);
 }
