@@ -75,10 +75,7 @@ body {
   background-color: #ff4d94;
   color: white;
 }
-.sidenav a.active {
-  background-color: #ff4d94;
-  color: white;
-}
+
 .topnav .icon {
   display: none;
 }
@@ -182,7 +179,10 @@ body {
 hr.new1 {
   border: 2px solid #99b3ff;
 }
-
+.sidenav a.active {
+  background-color: #ff4d94;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -220,9 +220,9 @@ hr.new1 {
       </div>
 </div>
 <div class="sidenav">
-  <a  href="https://dev.madebydanny.uk/code-snippets.html">Intro</a>
+  <a href="https://dev.madebydanny.uk/code-snippets.html">Intro</a>
   <hr class="new1">
-  <a href="/code-snippets/div.html">Div/Class</a>
+  <a class="active" href="/code-snippets/div.html">Div/Class</a>
   <hr class="new1">
   <a href="/code-snippets/basic-layout.html"><h3>Basic Layout</h3></a>
   <a href="/code-snippets/header.html">Header</a>
@@ -239,17 +239,16 @@ hr.new1 {
   <hr class="new1">
   <a href="/code-snippets/tools.html"><h3>Tools</h3></a>
   <a href="/code-snippets/search.html">Site Search</a>
-  <a class="active" href="/code-snippets/dark-mode.html">Dark Mode</a>
+  <a href="/code-snippets/dark-mode.html">Dark Mode</a>
   <a href="/code-snippets/top.html">Back to top</a>
   <a href="/code-snippets/logo.html">Favicon</a>
 </div>
 <div class="floater">
-<p><a href="/Markdown/dark.html">Haveing Problems | Open in new tap</a></p>
+<p><a href="/Markdown/HTML-div-and-classes.md.html">Haveing Problems | Open in new tap</a></p>
 </div>
-<iframe src="/Markdown/dark.html" style="border:none;" height="1000px" width="100%" title="Iframe Example"></iframe>
+<iframe src="/Markdown/HTML-div-and-classes.md.html" style="border:none;" height="1000px" width="100%" title="Iframe Example"></iframe>
 <div class="floater">
-  <p><a href="https://redjacket-web.madebydanny.uk">View Template on RedJacket Web</a> | <a href="https://dev.madebydanny.uk">MBD DEV</a> | <a href="https://github.com/therealfuntimeswithdanny/MBD-DEV">View on GitHub</a> | <a href="https://cloudflare.com">Secured by Cloudflare</a></p>
-</div>
+  <p><a href="https://redjacket-web.madebydanny.uk">View Template on RedJacket Web</a> | <a href="https://dev.madebydanny.uk">MBD DEV</a> | <a href="https://github.com/therealfuntimeswithdanny/MBD-DEV">View on GitHub</a> | <a href="https://cloudflare.com">Secured by Cloudflare</a></p></div>
 <script>
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
