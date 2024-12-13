@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Search MBD Developer</title>
+</head>
+<style>
+    #myInput {
+  background-color: #fe7362;
+  color: #32c4f9;
+  }
+  
+  #myUL {
+    overflow: hidden;
+    background-color: #f3ce73;
+    width: auto;
+    color: #fe7362;
+}
+  
+  #myUL li :hover {
+    background-color: #2decb7;
+    width: auto;
+    overflow: hidden;
+    padding: 10px, 10px, 10px, 10px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+</style>
+<body>
+    <a href="https://dev.madebydanny.uk">Back to Developer Home</a>
+    <h1>MBD Search is in Development</h1>
+    <ul id="myUL">
+        <h3>Search MBD Developer</h3>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search dev.madebydanny.uk">
+        <h6>Seacrch is powered by Javascript</h6>
+        <li><a href="https://dev.madebydanny.uk">HTML</a></li>
+        <li><a href="https://dev.madebydanny.uk">Code-snippets</a></li>
+        <li><a href="https://dev.madebydanny.uk/md/index.html">Markdown</a></li>
+      
+        <h5>More Comming Soon!</h5>
+      </ul>
+    <script>
+        function myFunction() {
+    const input = document.getElementById('myInput');
+    const filter = input.value.toUpperCase();
+    const ul = document.getElementById("myUL");
+    const li = ul.getElementsByTagName('li');
+  
+    for (let i = 0; i < li.length; i++) {
+      const a = li[i].getElementsByTagName("a")[0];
+      const txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  
+    </script>
+</body>
