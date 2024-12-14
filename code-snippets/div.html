@@ -29,6 +29,16 @@
         <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
         <a href="#">|</a>
         <a href="https://github.com/therealfuntimeswithdanny"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/therealfuntimeswithdanny/MBD-DEV"> <div id="repoInfo">Connecting to api.github.com</div>
+    
+          <script>
+              fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD-DEV')
+                  .then(response => response.json())
+                  .then(data => {
+                      const lastUpdated = new Date(data.updated_at).toLocaleString();
+                      document.getElementById('repoInfo').innerText = `Last Updated at: ${lastUpdated}`;
+                  });
+          </script></a>
       </div>
 </div>
 <div class="sidenav">
@@ -56,16 +66,7 @@
   <a href="/code-snippets/logo.html">Favicon</a>
 </div>
 <div class="floater">
-<p><a href="https://github.com/therealfuntimeswithdanny/MBD-DEV"> <div id="repoInfo">Connecting to api.github.com</div>
-    
-  <script>
-      fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD-DEV')
-          .then(response => response.json())
-          .then(data => {
-              const lastUpdated = new Date(data.updated_at).toLocaleString();
-              document.getElementById('repoInfo').innerText = `Last Updated at: ${lastUpdated}`;
-          });
-  </script></a></p>
+  <p><a href="https://dev.madebydanny.uk">MBD Developer is now powered by <a href="https://online.madebydanny.uk">MBD Online</a></p>
 </div>
 <div class="main">
   <iframe src="/Markdown/HTML-div-and-classes.md.html" style="border:none;" height="2000px" width="100%" title="Iframe Example"></iframe>
