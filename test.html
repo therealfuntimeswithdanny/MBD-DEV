@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="/Script/dev.js"></script>
+<link rel="stylesheet" href="/Style/dev.css">
+<title>Learn to Code | MBD Developer</title>
+<script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="https://cdn.madebydanny.uk/logos/dev.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msvalidate.01" content="52984902F7117CB789A14BB263026CA2"/>
+</head>
+<body>
+
+<div class="header">
+  <h1>Code Snippets</h1>
+</div>
+
+<div class="topnav">
+    <a>|</a>
+    <a href="/pages/md.html">Markdown</a>
+    <a class="active" href="/pages/code-snippets.html"><i class="fa-solid fa-code"></i>Code Snippets</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="topnav-right">
+        <a href="/pages/search.html"><i class="fa-solid fa-magnifying-glass"></i></a>    
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
+        <a href="#">|</a>
+        <a href="https://github.com/therealfuntimeswithdanny"><i class="fa-brands fa-github"></i></a>
+       <a href="https://github.com/therealfuntimeswithdanny/MBD-DEV"> <div id="repoInfo">Connecting to api.github.com</div>
+    
+        <script>
+            fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD-DEV')
+                .then(response => response.json())
+                .then(data => {
+                    const lastUpdated = new Date(data.updated_at).toLocaleString();
+                    document.getElementById('repoInfo').innerText = `Last Updated at: ${lastUpdated}`;
+                });
+        </script></a>
+      </div>
+</div>
+<div class="sidenav">
+  <a class="active" href="https://dev.madebydanny.uk/code-snippets.html">Intro</a>
+  <hr class="new1">
+  <a href="/code-snippets/div.html">Div/Class</a>
+  <hr class="new1">
+  <a href="/code-snippets/basic-layout.html"><h3>Basic Layout</h3></a>
+  <a href="/code-snippets/header.html">Header</a>
+  <a href="/code-snippets/navbar.html">Navbar</a>
+  <a href="/code-snippets/floater.html">Floater</a>
+  <hr class="new1">
+  <a href="/code-snippets/basic-layout.html"><h3>Columns</h3></a>
+  <a href="/code-snippets/columns.html/#1">Equal</a>
+  <a href="/code-snippets/columns.html/#2">Unequal</a>
+  <hr class="new1">
+  <a href="/code-snippets/icons.html"><h3>Icons</h3></a>
+  <a href="/code-snippets/icons.html/#1">What is Fontawsome</a>
+  <a href="/code-snippets/icons.html/#2">Adding Icons</a>
+  <hr class="new1">
+  <a href="/code-snippets/tools.html"><h3>Tools</h3></a>
+  <a href="/code-snippets/search.html">Site Search</a>
+  <a href="/code-snippets/dark-mode.html">Dark Mode</a>
+  <a href="/code-snippets/top.html">Back to top</a>
+  <a href="/code-snippets/logo.html">Favicon</a>
+</div>
+
+<div class="floater">
+<p>You are viewing the Stable Channel switch to the <a href="https://developer.madebydanny.co.uk">Development Channel</a> for fast updates</p>
+</div>
+<div class="main">
+    <div class="utterances">
+
+    </div>
+    <hr>
+    <div class="utterances-frame"></div>
+</div>
+<hr>
+<script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+<script src="https://utteranc.es/client.js"
+        repo="[therealfuntimeswithdanny/MBD-DEV]"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+<div class="floater">
+  <p>© Made By Danny | Performance & Security by Cloudflare | Content Powered By MBD CDN</p>
+</body>
+</html>
+
+
